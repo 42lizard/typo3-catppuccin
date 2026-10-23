@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a5aef2938cdfbb5315eaf09b362ae8f",
+    "content-hash": "eafe36bc8b98170108060b149f70ff41",
     "packages": [
         {
             "name": "42lizard/catppuccin",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "dist": {
                 "type": "path",
                 "url": "..",
-                "reference": "ea4dfcc385e3e9afbdc6bb453299d3b86762c0e3"
+                "reference": "6257718800291dce4a0cf5efd82ae545639591a4"
             },
             "require": {
                 "php": "^8.2",

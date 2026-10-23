@@ -9,12 +9,12 @@
             "url": "..",
             "options": {
                 "symlink": true,
-                "versions": {"42lizard/catppuccin": "0.1.0"}
+                "versions": {"42lizard/catppuccin": "0.1.1"}
             }
         }
     ],
     "require": {
-        "42lizard/catppuccin": "0.1.0",
+        "42lizard/catppuccin": "0.1.1",
         "typo3/cms-beuser": "^14.3",
         "typo3/cms-dashboard": "^14.3",
         "typo3/cms-filelist": "^14.3",

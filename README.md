@@ -20,20 +20,13 @@ Real TYPO3 14.3 backend screenshots, captured with the global Playwright MCP. Th
 
 ![The four Catppuccin flavours in the native TYPO3 theme selector](Documentation/Images/theme-selection.png)
 
-## Install from GitHub with Composer
+## Installation
 
-Add the GitHub repository to the **TYPO3 project's** Composer configuration. Packagist registration is not required.
-
-```bash
-composer config repositories.catppuccin vcs https://github.com/42lizard/typo3-catppuccin.git
-composer require 42lizard/catppuccin:dev-main
-vendor/bin/typo3 cache:flush
-```
-
-Once a `v0.1.0` tag has been published, use a tagged release:
+Install the package from [Packagist](https://packagist.org/packages/42lizard/catppuccin) in your TYPO3 project. No additional Composer repository configuration is needed.
 
 ```bash
 composer require '42lizard/catppuccin:^0.1'
+vendor/bin/typo3 cache:flush
 ```
 
 The extension registers automatically. It requires no database migration or site set. The same commands work with `ddev composer` and `ddev typo3` in an existing DDEV project.

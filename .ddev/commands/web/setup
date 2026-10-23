@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+## Description: Install TYPO3 with the local ddev/ddev admin
+## Usage: setup
+set -euo pipefail
+cd /var/www/html/Development
+composer install
+mkdir -p config/system
+cp additional.php config/system/additional.php
+if [ ! -f config/system/settings.php ]; then
+    export TYPO3_SETUP_ADMIN_PASSWORD="$(openssl rand -hex 24)Aa1!"
+    vendor/bin/typo3 setup --server-type=other --driver=mysqli --host=db --port=3306 --dbname=db --username=db --password=db --admin-username=ddev --admin-email=dev@example.test --project-name=Catppuccin --no-interaction
+    unset TYPO3_SETUP_ADMIN_PASSWORD
+fi
+php set-admin.php

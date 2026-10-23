@@ -1,0 +1,32 @@
+{
+    "name": "42lizard/catppuccin-development",
+    "description": "Local TYPO3 installation for developing the Catppuccin extension",
+    "type": "project",
+    "license": "GPL-2.0-only",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "..",
+            "options": {
+                "symlink": true,
+                "versions": {"42lizard/catppuccin": "0.1.0"}
+            }
+        }
+    ],
+    "require": {
+        "42lizard/catppuccin": "0.1.0",
+        "typo3/cms-beuser": "^14.3",
+        "typo3/cms-dashboard": "^14.3",
+        "typo3/cms-filelist": "^14.3",
+        "typo3/cms-install": "^14.3",
+        "typo3/cms-styleguide": "^14.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "sort-packages": true
+    },
+    "extra": {"typo3/cms": {"web-dir": "public"}}
+}

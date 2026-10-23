@@ -1,0 +1,13 @@
+name: catppuccin
+type: typo3
+docroot: Development/public
+composer_root: Development
+php_version: "8.4"
+webserver_type: nginx-fpm
+database:
+  type: mariadb
+  version: "11.4"
+xdebug_enabled: false
+use_dns_when_possible: true
+web_environment:
+  - TYPO3_CONTEXT=Development/DDEV

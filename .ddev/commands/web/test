@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+## Description: Validate package registration, syntax and generated assets
+## Usage: test
+set -euo pipefail
+cd /var/www/html
+php -l ext_emconf.php
+php -l ext_localconf.php
+php -l Configuration/TCA/Overrides/be_users.php
+php Tests/registration.php
+node --test Tests/theme.test.mjs
+node Build/build.mjs --check
+composer validate --strict
+cd Development
+composer validate --strict

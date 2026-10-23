@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+## Description: Run the development TYPO3 CLI
+## Usage: typo3 [arguments]
+## Example: "ddev typo3 cache:flush"
+set -euo pipefail
+cd /var/www/html/Development
+exec vendor/bin/typo3 "$@"

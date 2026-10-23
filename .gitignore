@@ -1,0 +1,17 @@
+/vendor/
+/composer.lock
+/Development/vendor/
+/Development/var/
+/Development/config/
+/Development/public/*
+!/Development/public/.gitkeep
+/.ddev/.gitignore
+/.ddev/.dbimageBuild/
+/.ddev/.webimageBuild/
+/.ddev/.ddev-docker-compose*.yaml
+/.ddev/.downloads/
+/.ddev/.global_commands/
+/.ddev/.homeadditions/
+/.ddev/.router-compose*.yaml
+/.ddev/.sshimageBuild/
+/.ddev/db_snapshots/

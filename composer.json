@@ -20,6 +20,6 @@
         }
     },
     "archive": {
-        "exclude": ["/.ddev", "/Development", "/Tests", "/Build", "/.gitignore", "/.editorconfig"]
+        "exclude": ["/.ddev", "/.github", "/Development", "/Tests", "/Build", "/.gitignore", "/.editorconfig"]
     }
 }

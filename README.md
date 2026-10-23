@@ -1,5 +1,7 @@
 # Catppuccin for TYPO3
 
+[![Tests](https://github.com/42lizard/typo3-catppuccin/actions/workflows/tests.yml/badge.svg)](https://github.com/42lizard/typo3-catppuccin/actions/workflows/tests.yml)
+
 The four [Catppuccin](https://catppuccin.com/) flavours in TYPO3's native backend theme selector: **Latte**, **Frappé**, **Macchiato** and **Mocha**.
 
 Composer package: `42lizard/catppuccin` · Extension key: `catppuccin` · PHP namespace: `Lizard\Catppuccin`
@@ -20,10 +22,10 @@ Real TYPO3 14.3 backend screenshots, captured with the global Playwright MCP. Th
 
 ## Install from GitHub with Composer
 
-Add the GitHub repository to the **TYPO3 project's** Composer configuration. The following example assumes the repository is published at `42lizard/catppuccin`; substitute the actual GitHub URL if different. Packagist registration is not required.
+Add the GitHub repository to the **TYPO3 project's** Composer configuration. Packagist registration is not required.
 
 ```bash
-composer config repositories.catppuccin vcs https://github.com/42lizard/catppuccin.git
+composer config repositories.catppuccin vcs https://github.com/42lizard/typo3-catppuccin.git
 composer require 42lizard/catppuccin:dev-main
 vendor/bin/typo3 cache:flush
 ```

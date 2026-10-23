@@ -15,6 +15,6 @@
         }
     },
     "archive": {
-        "exclude": ["/.ddev", "/.github", "/Development", "/Tests", "/Build", "/.gitignore", "/.editorconfig"]
+        "exclude": ["/.ddev", "/.github", "/AGENTS.md", "/docs/agents", "/Development", "/Tests", "/Build", "/.gitignore", "/.editorconfig"]
     }
 }

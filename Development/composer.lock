@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "..",
-                "reference": "c406ab07ef6ec6f335b004245afc5c5fdfdfea0d"
+                "reference": "ea4dfcc385e3e9afbdc6bb453299d3b86762c0e3"
             },
             "require": {
                 "php": "^8.2",
@@ -28,12 +28,10 @@
             "archive": {
                 "exclude": [
                     "/.ddev",
+                    "/.github",
                     "/Development",
                     "/Tests",
                     "/Build",
-                    "/node_modules",
-                    "/package.json",
-                    "/package-lock.json",
                     "/.gitignore",
                     "/.editorconfig"
                 ]

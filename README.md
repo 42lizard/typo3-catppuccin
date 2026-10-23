@@ -4,7 +4,7 @@
 
 The four [Catppuccin](https://catppuccin.com/) flavours in TYPO3's native backend theme selector: **Latte**, **Frappé**, **Macchiato** and **Mocha**.
 
-Composer package: `42lizard/catppuccin` · Extension key: `catppuccin` · PHP namespace: `Lizard\Catppuccin`
+Composer package: `42lizard/catppuccin` · Extension key: `catppuccin`
 
 Requires **TYPO3 14.3 LTS** and **PHP 8.2+**. No runtime JavaScript, external fonts, CDN requests or frontend configuration. The compiled stylesheet is included in the package.
 
